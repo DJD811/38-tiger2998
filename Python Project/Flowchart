@@ -1,0 +1,11 @@
+# Print Welcome Message
+print("Welcome to our game")
+
+#Asking the user to enter a number and storing the response
+userRollResponse = input("Press 1 to roll a dice: ")
+
+#Converting userRollResponse that was a string
+userRollResponse = int(userRollResponse)
+
+while userRollResponseint !=1:
+userRoll
