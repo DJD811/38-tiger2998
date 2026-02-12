@@ -1,7 +1,4 @@
-# A simple script to log skate sessions.
-# It will create a log file with the date and time of the session, and the duration of the session.
-# The log file will be saved in the same directory as the script.
-# Usage: python skatelog.py
+
 import json
 import os
 from datetime import datetime
