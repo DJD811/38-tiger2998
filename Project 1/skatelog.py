@@ -1,4 +1,3 @@
-skatelog.py
 # A simple script to log skate sessions.
 # It will create a log file with the date and time of the session, and the duration of the session.
 # The log file will be saved in the same directory as the script.
@@ -10,7 +9,7 @@ from datetime import datetime
 
 # -----------------------------
 # Utility Functions
-# -----------------------------
+# ------------------------------
 
 def load_data(filename):
     if not os.path.exists(filename):
