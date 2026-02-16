@@ -41,7 +41,37 @@ def main_menu():
 
     return input("Choose an option: ")
 
+def add_session(sessions):
+    print("\n--- Add Session---")
 
+    spot = input("Enter spot name:")
+    duration = input("Enter session duration")
+    mood = input("Enter mood (1-5):")
+
+    sessionw = {
+        "spot": spot,
+        "duration": duration, 
+        "mood": mood,
+        "date": datetime.now().strftime("%Y-%m-%d")
+    }
+
+    sessions.append(sessionw)
+    save_data("data/sessions.json", sessions)
+    print("Session saved successfully.")
+
+def view_sessions(sessions):
+    print("\n--- View Sessions ---")
+
+    if not sessions:
+        print("No sessions recorded yet.")
+        return
+
+    for index, session in enumerate(sessions, start=1):
+        print(f"\nSession {index}")
+        print("Spot:", session["spot"])
+        print("Duration:", session["duration"])
+        print("Mood:", session["mood"])
+        print("Date:", session["date"])
 # -----------------------------
 # Run Program
 # -----------------------------
@@ -55,8 +85,11 @@ def run():
 
     while True:
         choice = main_menu()
-
-        if choice == "0":
+        if choice == "1":
+            add_session(sessions)
+        elif choice == "2":
+            view_sessions(sessions)
+        elif choice == "0":
             print("Goodbye.")
             break
         else:
