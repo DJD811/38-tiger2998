@@ -1,0 +1,13 @@
+def view_entries(writing):
+    print("\n--- View Writing ---")
+
+    if not writing:
+        print("No writing entries yet.")
+        return
+
+    for index, entry in enumerate(writing, start=1):
+        print(f"\nEntry {index}")
+        print("Title:", entry["title"])
+        print("Date:", entry["date"])
+        print("Word Count:", entry["word_count"])
+        print("Content:", entry["content"])

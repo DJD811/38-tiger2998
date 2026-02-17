@@ -89,6 +89,10 @@ def run():
             add_session(sessions)
         elif choice == "2":
             view_sessions(sessions)
+        elif choice == "3":
+            add_entry(writing)
+        elif choice == "4":
+           view_entries(writing)
         elif choice == "0":
             print("Goodbye.")
             break
