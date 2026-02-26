@@ -1,0 +1,29 @@
+START
+   ↓
+Initialize program
+   ↓
+Load JSON data
+   ↓
+WHILE (user_choice != "0")   ← Boolean condition
+   ↓
+Display Main Menu
+   ↓
+Get user input
+   ↓
+Is choice == "1"?
+   ├── YES → Add Session
+   └── NO →
+         Is choice == "2"?
+             ├── YES → View Sessions
+             └── NO →
+                   Is choice == "3"?
+                       ├── YES → Add Writing
+                       └── NO →
+                             Is choice == "0"?
+                                 ├── YES → Exit Program
+                                 └── NO → Display "Invalid Input"
+   ↓
+Return to Main Menu
+END WHILE
+   ↓
+END
