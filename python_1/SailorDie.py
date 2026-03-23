@@ -1,20 +1,45 @@
 import random
-print("Welcome to the Sailor Dice Game! Pick your Occupation! 🎲")
-while True:
-    user_input = input("Press 1 to roll the die:")
 
-    # Step 3: Validate input
-    if user_input != "1":
-        print("Error! You must press 1 to roll the die.")
-        continue 
-    dice_roll = random.randint(1, 6)
+def roll_dice(num_dice):
+    return [random.randint(1, 6) for _ in range(num_dice)]
 
-    print(f"The die rolled: {dice_roll}")
-    play_again = input("Do you want to play again? Please type yes or no:").lower()
+def play_round():
+    dice = roll_dice(5)
+    ship = captain = crew = False
 
-    # Step 8: Decision
-    if play_again == "yes":
-        continue
-    else:
-        print("Thank you for playing this Sailor Dice Game. Safe travels Sinbad!")
-        break  # End the program
+    print("Initial roll:", dice)
+
+    # Try up to 3 rolls
+    for roll_num in range(3):
+        if 6 in dice and not ship:
+            dice.remove(6)
+            ship = True
+            print("Got the ship (6)")
+        
+        if ship and 5 in dice and not captain:
+            dice.remove(5)
+            captain = True
+            print("Got the captain (5)")
+        
+        if captain and 4 in dice and not crew:
+            dice.remove(4)
+            crew = True
+            print("Got the crew (4)")
+
+        if ship and captain and crew:
+            cargo = sum(dice)
+            print("Cargo dice:", dice)
+            return cargo
+
+        # reroll remaining dice
+        dice = roll_dice(len(dice))
+        print(f"Roll {roll_num + 2}:", dice)
+
+    return 0
+
+def main():
+    score = play_round()
+    print("Final cargo score:", score)
+
+if __name__ == "__main__":
+    main()
