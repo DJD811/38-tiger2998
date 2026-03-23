@@ -6,6 +6,8 @@ Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](./another-page.html).
 
+[Linkedin Profile](./https://www.linkedin.com/in/denis-denerville-b273403b5/)
+
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
