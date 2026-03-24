@@ -1,6 +1,6 @@
 # Denis Denerville
 
-📍 East Hartford, CT 06108  
+📍 Norwalk, CT, 06850  
 📧 denis.denerville@aol.com 
 📞 +1 (203) 434-1192
 
@@ -30,14 +30,20 @@ Highly motivated and detail-oriented professional transitioning into the field o
 
 ## Key Projects
 
-### The Sentinel Hybrid-SOC
-*A comprehensive security ecosystem for unified threat detection and automated response.*
+### Key Projects
 
-- Designed and built a simulated Security Operations Center (SOC) integrating **Wazuh (SIEM/EDR)**, **AWS (Cloud)**, and **Shuffle (SOAR)**.
-- Engineered automated workflows to detect, enrich, and contain threats in under 60 seconds, significantly reducing Mean Time to Respond (MTTR).
-- Centralized logs from Windows 10 endpoints and AWS CloudTrail to create a single pane of glass for security visibility.
-- Mapped simulated attacks to the **MITRE ATT&CK framework** to validate detection capabilities.
+#### Project Trinity (Advanced Web, ERP, & Cloud Penetration)
+A comprehensive offensive security simulation for critical infrastructure exploitation and Zero-Trust remediation.
 
+Designed and built a multi-subnet virtual lab to simulate and remediate three high-profile global breaches: Collins Aerospace vMUSE (Aviation), Jaguar Land Rover (Manufacturing), and WWE (Cloud Leak).
+
+Executed unauthenticated Remote Code Execution (RCE) chains in Java/ERP environments by weaponizing file-upload vulnerabilities and insecure deserialization payloads (ysoserial).
+
+Audited enterprise identity and cloud environments, pivoting through Active Directory (BloodHound) and identifying public Amazon S3 data leaks (LocalStack).
+
+Engineered Zero-Trust micro-segmentation policies using virtual firewalls (pfSense) to successfully contain lateral movement and reduce attack blast radius.
+
+Mapped manual attack vectors to the MITRE ATT&CK framework to validate organizational detection and automated egress blocking capabilities.
 ---
 
 ## Work Experience
