@@ -21,6 +21,9 @@
       <div id="header">
         <nav>
           <ul>
+            {% for item in site.navigation %}
+              <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            {% endfor %}
             <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
             {% if site.show_downloads %}
               <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
@@ -35,8 +38,10 @@
 
       <section>
         <div id="title">
+          {% if site.logo %}<img src="{{ site.logo | relative_url }}" alt="Logo">{% endif %}
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p>
+          {% if site.headshot %}<img src="{{ site.headshot | relative_url }}" alt="Headshot" style="border-radius: 50%; width: 150px; height: 150px;">{% endif %}
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
           <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
