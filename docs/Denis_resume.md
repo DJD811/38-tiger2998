@@ -8,7 +8,7 @@
 
 ## Professional Summary
 
-Highly motivated and detail-oriented professional transitioning into the field of cybersecurity. Currently developing hands-on experience in incident response, threat detection, and security automation through an intensive tech cohort. Eager to apply analytical skills and a passion for problem-solving to a role as an Incident Response Analyst.
+Highly motivated and detail-oriented professional transitioning into the field of cybersecurity. Currently developing hands-on experience in incident response, threat detection, and security automation through an intensive tech cohort. Eager to apply analytical skills and a passion for problem-solving to a role as an Ethical Hacker.
 
 - Authorized to work in the US for any employer  
 - Willing to relocate to: Stamford, CT • West Hartford, CT • Hartford, CT • East Hartford, CT  
