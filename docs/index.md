@@ -3,8 +3,6 @@ layout: default
 title: [Denis Denerville]'s Cybersecurity Portfolio
 ---
 
-<img src="/docs/assets/images/headshot.jpeg">
-
 # Aspiring Web Application Penetration Tester
 
 Welcome to my portfolio. I am an ethical hacker and cybersecurity professional specializing in Web Application, API, and Cloud penetration testing. This site showcases my journey through advanced security simulations, where I develop custom Proof-of-Concept (PoC) exploits and engineer code-level Zero-Trust remediations to neutralize modern cyber threats.
@@ -23,3 +21,5 @@ My capstone project is **Project Trinity**, an intensive offensive security simu
 * **Defensive Architecture**: Zero-Trust Micro-segmentation (pfSense), Wireshark Traffic Forensics
 
 Feel free to explore my projects, read my CVSS-scored penetration reports, and learn more about my qualifications.
+
+## Graduation Date: July 16, 2026
