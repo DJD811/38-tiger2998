@@ -6,6 +6,7 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/mobile-nav.css' | relative_url }}">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
@@ -19,8 +20,8 @@
   </head>
   <body>
       <div id="header">
-        <nav>
-          <ul>
+    <nav id="main-nav">
+        <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/projects">Projects</a></li>
@@ -29,9 +30,14 @@
             <li><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/denis-denerville-b273403b5/">View On LinkedIn</a></li>
             <li><a href="{{ '/assets/Denis_Resume.pdf' | relative_url }}" download>Download Resume</a></li>
-          </ul>
-        </nav>
-      </div><!-- end header -->
+        </ul>
+    </nav>
+    <div id="mobile-menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div><!-- end header -->
 
     <div class="wrapper">
 
@@ -51,5 +57,12 @@
       </section>
 
     </div>
+    <script>
+        $(document).ready(function(){
+            $('#mobile-menu-icon').click(function(){
+                $('#main-nav').toggleClass('active');
+            });
+        });
+    </script>
   </body>
 </html>
