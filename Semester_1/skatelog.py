@@ -4,9 +4,20 @@ import os
 from datetime import datetime
 
 
+
 # -----------------------------
 # Utility Functions
 # ------------------------------
+
+def caesar_cipher(text, shift)
+    result = ""
+    for char in text
+    if char.isplpha():
+        result += chr((ord(char)- 97 + shift) % 26 +97) 
+    else:
+        result += char
+        return result))
+encoded_spot = caesar_cipher(spot.lower(), 3)
 
 def load_data(filename):
     if not os.path.exists(filename):
@@ -93,6 +104,8 @@ def run():
             add_entry(writing)
         elif choice == "4":
            view_entries(writing)
+        elif choice == "5":
+            add_media()
         elif choice == "0":
             print("Goodbye.")
             break
