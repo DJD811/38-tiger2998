@@ -64,7 +64,7 @@ Mapped manual attack vectors to the MITRE ATT&CK framework to validate organizat
 **DAE — Stamord, CT**  
 *February 2026 – Present*
 
-### GED  
+### Diploma's  
 **Brien McMahon High School — CT**  
 *August 2012 – April 2016*
 
@@ -85,7 +85,6 @@ Mapped manual attack vectors to the MITRE ATT&CK framework to validate organizat
 - English (Fluent)  
 - French (Intermediate)  
 - Japanese (Beginner)
----
 
 ## Certifications & Licenses
 
